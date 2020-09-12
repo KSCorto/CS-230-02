@@ -1,0 +1,23 @@
+.bg-cover {
+    background-image: url(../Images/Background.jpg);
+    height: 100vh;
+    background-position: center; /*Centers the backround*/
+    background-size: cover; /* makes background cover the entire screen*/
+    background-attachment: scroll; /*allows background to move with the scroll*/
+    background-repeat: no-repeat; /*stops background from repeating if too small*/
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-signin {
+    padding: 30px;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 10px;
+}
