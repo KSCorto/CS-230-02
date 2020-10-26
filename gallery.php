@@ -1,5 +1,6 @@
 <?php
 require 'includes/header.php';
+require 'includes/dbhandler.php';
 ?>
 
 <main>
@@ -7,7 +8,6 @@ require 'includes/header.php';
     <h1>Gallery</h1>
         <div class="gallery-container">
             <?php
-                include_once 'includes/dbhandler.php';
                 $sql = "SELECT * FROM reviews ORDER BY upload_date DESC";
                 $stmt = mysqli_stmt_init($conn);
 
@@ -19,7 +19,7 @@ require 'includes/header.php';
                     $result = mysqli_stmt_get_result($stmt);
                     while ($row=mysqli_fetch_assoc($result)){
                         echo '<div class="card">
-                            <a href="#">
+                            <a href="review.php?id='.$row['pid'].'">
                                 <img src="reviews/'.$row["picpath"].'">
                                 <h3>'.$row["title"].'</h3>
                                 <p>'.$row["descript"].'</p>
