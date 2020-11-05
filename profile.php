@@ -64,7 +64,7 @@ if(isset($_SESSION['uid'])) {
                 <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none">
             </div>
             <div class="form-group">
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="boi..." style="text-align: center;"></textarea>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter bio..." style="text-align: center;"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" name="prof-submit" class="btn btn-outline-success btn-lg btn-block">upload</button>

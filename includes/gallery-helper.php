@@ -33,7 +33,7 @@ if(isset($_POST['gallery-submit'])) {
         $new_name = uniqid('', true).".".$ext;
         $destination = '../reviews/'.$new_name;
 
-        $sql = "INSERT INTO reviews (title, descript, picpath) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO gallery (title, descript, picpath) VALUES (?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)) {

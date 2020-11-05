@@ -8,7 +8,7 @@ require 'includes/review-helper.php';
     <span id="testAvg"></span>
     <div class="container" align="center" style="max-width: 800px">
         <div class="my-auto">
-            <form id="review-form" action="includes/review-helper.php" method="post">
+            <form id="review-form" action="includes/review-helper.php" method="POST">
                 <div class="container">
                     <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
                     <i class="fa fa-star fa-2x star-rev" data-index="2"></i>
@@ -21,7 +21,7 @@ require 'includes/review-helper.php';
                     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;">
                     <textarea class="form-control" id="review-text" name="review" cols="50" rows="3" placeholder="Enter a comment..."></textarea>
                     <input type="hidden" name="rating" id="rating">
-                    <input type="hidden" name="item-id" value="<?php echo $_GET['id'];?>">
+                    <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>">
                 </div>
                 <div class="form-group">
                     <button class="btn btn-outline-danger" id="review-submit" name="review-submit" type="submit" style="width: 100%;">Review</button>

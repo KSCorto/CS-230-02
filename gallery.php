@@ -5,10 +5,11 @@ require 'includes/dbhandler.php';
 
 <main>
 <link rel="stylesheet" href="css/gallery.css">
+<link rel="css/reviews.css" rel="stylesheet">
     <h1>Gallery</h1>
         <div class="gallery-container">
             <?php
-                $sql = "SELECT * FROM reviews ORDER BY upload_date DESC";
+                $sql = "SELECT * FROM gallery ORDER BY upload_date DESC";
                 $stmt = mysqli_stmt_init($conn);
 
                 if(!mysqli_stmt_prepare($stmt, $sql)) {

@@ -1,0 +1,13 @@
+devine
+cs230Lab
+
+micaustin
+cs230Lab
+
+https://554508861763.signin.aws.amazon.com/console
+
+Access Key: 
+AKIAYCG2NYFB4F4PYNL6
+
+Secret Access Key: 
+KfQNHCKcP+6TygwlwCYGb/zjxZblfnZ4KgegnPAZ
