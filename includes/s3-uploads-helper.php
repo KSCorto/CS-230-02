@@ -21,8 +21,8 @@ if(isset($_POST[s3-submit])) {
             array('region'=>'us-east-2',
             'version'=>'latest',
             'credentials'=> array(
-                'key'=>"AKIAYCG2NYFBWA4JC6YH",
-                'secret'=>"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"
+                'key'=>"",
+                'secret'=>""
             )
             )
         );
