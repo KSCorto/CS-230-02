@@ -15,7 +15,7 @@ if (isset($_POST['prof-submit'])) {
     $file_error = $file['error'];
     $file_size = $file['size'];
 
-    $bio = $POST['bio'];
+    $bio = $_POST['bio'];
 
     $ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
@@ -50,7 +50,7 @@ if (isset($_POST['prof-submit'])) {
             mysqli_stmt_store_result($stmt);
 
             move_uploaded_file($file_temp_name, $destination);
-            header("Location: ../profile.php?error=UploadSuccess");
+            header("Location: ../profile.php?success=UploadSuccess");
             exit();
         }
 
